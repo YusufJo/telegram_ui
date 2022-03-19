@@ -14,14 +14,15 @@ class MenuDrawer extends StatelessWidget {
           children: [
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-              height: constraints.maxHeight * 0.2,
+              height: constraints.maxHeight * 0.20,
               color: primaryContainer,
               child: SafeArea(
-                child: _DrawerHeader(onPrimaryContainer: onPrimaryContainer),
-              ),
+                  bottom: false,
+                  child: _DrawerHeader(onPrimaryContainer: onPrimaryContainer)),
             ),
             Expanded(
               child: ListView.separated(
+                  padding: const EdgeInsets.only(top: 12),
                   itemBuilder: (_, index) {
                     final item = _MenuDrawerItemModel.all[index];
                     return _DrawerMenuTile(
@@ -70,6 +71,9 @@ class _DrawerHeader extends StatelessWidget {
               AssetIcon.menuNight,
             ),
           ],
+        ),
+        const SizedBox(
+          height: 12,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
