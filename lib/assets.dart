@@ -13,4 +13,5 @@ abstract class AssetIcon {
   static const menuInvite = _iconPath + 'menu_invite.png';
   static const menuHelp = _iconPath + 'menu_help.png';
   static const listWarningSign = _iconPath + 'list_warning_sign.png';
+  static const msgSeen = _iconPath + 'msg_seen.png';
 }

@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:telegram_ui_joseph/assets.dart';
+import 'package:telegram_ui_joseph/home_view.dart';
 import 'package:telegram_ui_joseph/theme.dart';
 
 import 'menu_drawer.dart';
 
-void main() => runApp(const TelegramApp());
+Future<void> main() async {
+  runApp(const TelegramApp());
+}
 
 class TelegramApp extends StatelessWidget {
   const TelegramApp({Key? key}) : super(key: key);
@@ -26,6 +29,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: false,
         title: const Text("Telegram"),
         actions: [
           Image.asset(AssetIcon.icABSearch),
@@ -36,7 +40,7 @@ class HomeScreen extends StatelessWidget {
         onPressed: () {},
         child: Image.asset(AssetIcon.floatingPencil),
       ),
+      body: const HomeView(),
     );
   }
 }
-
