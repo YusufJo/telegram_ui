@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:telegram_ui_joseph/assets.dart';
+
+import 'assets.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({Key? key}) : super(key: key);

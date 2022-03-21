@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:telegram_ui_joseph/assets.dart';
-import 'package:telegram_ui_joseph/home_view.dart';
-import 'package:telegram_ui_joseph/theme.dart';
-
+import 'assets.dart';
+import 'home_view.dart';
 import 'menu_drawer.dart';
+import 'theme.dart';
 
 Future<void> main() async {
   runApp(const TelegramApp());

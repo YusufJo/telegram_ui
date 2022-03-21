@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:telegram_ui_joseph/assets.dart';
-import 'package:telegram_ui_joseph/chat_model.dart';
-import 'package:telegram_ui_joseph/chat_service.dart';
+
+import 'assets.dart';
+import 'chat_model.dart';
+import 'chat_service.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);

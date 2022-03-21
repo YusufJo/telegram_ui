@@ -1,4 +1,4 @@
-# telegram_ui_joseph
+# Telegram UI Demo - Home and Drawer
 
 Telegram UI clone. Implementation of home and drawer UIs.
 

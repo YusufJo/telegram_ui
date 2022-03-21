@@ -1,7 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:telegram_ui_joseph/chat_model.dart';
+
+import 'chat_model.dart';
 
 abstract class ChatService {
   static Future<List<ChatModel>> getLastChats() async {
